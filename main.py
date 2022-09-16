@@ -14,24 +14,24 @@
 ###############################################Review############################################################
 #####################################challenge 1################################################################
 # Create a list with 5 elements, inside the variable my_list. You can include strings, booleans, numbers, etc.
-my_list = "Apple", "Pear", "Orange", "Bread", "Dough"
-print(my_list)
+# my_list = "Apple", "Pear", "Orange", "Bread", "Dough"
+# print(my_list)
 
 # Add the element "motorcycle" to the following list of means of transportation:
 
-transportation_means = ["plane", "car", "ship", "bicycle"]
-transportation_means.append("mortocylcle")
-print(transportation_means)
-transportation_means.remove("car")
-print(transportation_means)
-newTrans = transportation_means.pop()
+# transportation_means = ["plane", "car", "ship", "bicycle"]
+# transportation_means.append("mortocylcle")
+# print(transportation_means)
+# transportation_means.remove("car")
+# print(transportation_means)
+# newTrans = transportation_means.pop()
 # pop removes last element 
-print(newTrans)
-print("My new veichel is " + newTrans)
-transportation_means.insert(1, "Tesla")
-print(transportation_means)
-transportation_means.insert(3, "Boat")
-print(transportation_means)
+# print(newTrans)
+# print("My new veichel is " + newTrans)
+# transportation_means.insert(1, "Tesla")
+# print(transportation_means)
+# transportation_means.insert(3, "Boat")
+# print(transportation_means)
 # You must not modify the already supplied line of code, but must use the appropriate list method to add a new element.
 
 # here are two lists:
@@ -39,8 +39,10 @@ luckyNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15]
 friends = ["Kevin", "Karen", "jim", "oscar", "tim", "lord tennyson"]
 # instructions:
 ######join both lists together in a new list
-
-###### print the new list out
+# new_list = luckyNumbers+friends
+# ###### print the new list out
+# print('Merged List:')
+# print(new_list)
 
 ###### print out the first item in the list
 
@@ -66,28 +68,36 @@ friends = ["Kevin", "Karen", "jim", "oscar", "tim", "lord tennyson"]
 #####################################challenge 2#######################################################
 # Join the following list into a string, separating each item with a space. Use the appropriate list/string method, and display the result.
 word_list = ["Simple", "is", "better", "than", "complex."]
-
+print(' '.join(word_list))
 # Print the following text in uppercase, using the specific string method:
 
 text1 = "Especially in electronic communications, writing in all caps is equivalent to yelling."
+print(text1.upper())
 
 #substrings
 # Take every third character starting from the ninth to the end of the sentence, and print the result.
 
 text2 = "Never trust a computer you can't throw out a window"
-
+print(text2[8: :3])
 # Reverses the position of all the characters in the following sentence and displays the result on the screen.
 
 text3 = "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
-
+print(text3[:-1])
 # Extract the first word of the following sentence using slicing, and display it on the screen:
-"Controlling complexity is the essence of programming"
-
+sentence = "Controlling complexity is the essence of programming"
+all_words = sentence.split()
+print(all_words)
+print("First word is : " +all_words[0])
 # create a text input that asks for choice of food
 #create an empty list variable called food
 # add 3 items from the user into the empty list
 #print out the menu list
-
+foodChoice = input("What is your choice of food")
+food = []
+food.append(foodChoice)
+food.append(foodChoice)
+food.append(foodChoice)
+print(food)
 ##############################################################################################################
 # what are tuples?
 # exactly the same thing as an array only it is immutable, once you define the tuple, you cannot change it or modify it
