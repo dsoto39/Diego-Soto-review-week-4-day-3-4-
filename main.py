@@ -28,6 +28,10 @@ newTrans = transportation_means.pop()
 # pop removes last element 
 print(newTrans)
 print("My new veichel is " + newTrans)
+transportation_means.insert(1, "Tesla")
+print(transportation_means)
+transportation_means.insert(3, "Boat")
+print(transportation_means)
 # You must not modify the already supplied line of code, but must use the appropriate list method to add a new element.
 
 # here are two lists:
