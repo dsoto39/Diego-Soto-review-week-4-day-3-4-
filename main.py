@@ -92,12 +92,12 @@ print("First word is : " +all_words[0])
 #create an empty list variable called food
 # add 3 items from the user into the empty list
 #print out the menu list
-foodChoice = input("What is your choice of food")
-food = []
-food.append(foodChoice)
-food.append(foodChoice)
-food.append(foodChoice)
-print(food)
+# foodChoice = input("What is your choice of food")
+# food = []
+# food.append(foodChoice)
+# food.append(foodChoice)
+# food.append(foodChoice)
+# print(food)
 ##############################################################################################################
 # what are tuples?
 # exactly the same thing as an array only it is immutable, once you define the tuple, you cannot change it or modify it
@@ -119,6 +119,8 @@ my_tuple = (1, 2, (10, 20), 4)
 
 # place these numbers in separate variables from the tuple below
 t = (1, 2, 3)
+x,y,z = t
+print(x,y,z)
 
 #get me the length of the above tuple --- there are two ways of doing this... len(), count()...  use count if you want to get how many times an item appears in a tuple
 
